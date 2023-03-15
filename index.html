@@ -6,45 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!--    <script charset="utf-8" src="js/app.js"></script>-->
     <link rel="stylesheet" href="css/app.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container">
-        <h1 class="headline">Personal Website - The Blog</h1>
-    </div>
-    <div class="repos">
-        <h2>Code Repositories</h2>
-        <ul>
-            <li>
-                <a class="tooltip" href="https://github.com/akhilgandhi/blog-backend" target="_blank">
-                    Backend service for blogging APIs
-                    <span class="tooltiptext">Backend service for blogging APIs</span>
-                </a>
-            </li>
-            <li>
-                <a class="tooltip" href="https://github.com/akhilgandhi/user-backend" target="_blank">
-                    Backend service for user authentication APIs
-                    <span class="tooltiptext">Backend service for user authentication APIs</span>
-                </a>
-            </li>
-            <li>
-                <a class="tooltip" href="https://github.com/akhilgandhi/personal-frontend" target="_blank">
-                    Frontend application
-                    <span class="tooltiptext">Frontend application</span>
-                </a>
-            </li>
-            <li>
-                <a class="tooltip" href="https://github.com/akhilgandhi/personal-backend-devops" target="_blank">
-                    DevOps repository
-                    <span class="tooltiptext">DevOps repository</span>
-                </a>
-            </li>
-            <li>
-                <a class="tooltip" href="https://github.com/akhilgandhi/service-registry" target="_blank">
-                    Service registry repository
-                    <span class="tooltiptext">Service registry repository</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">Personal Website - The Blog</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">This a resource page to document and understand personal blogging website.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="repos">
+            <div class="container">
+                <div class="repos list-group w-auto">
+                  <a href="https://github.com/akhilgandhi/blog-backend" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">blog</h6>
+                        <p class="mb-0 opacity-75">This backend service exposes APIs for creating, updating, reading, and deleting blogs.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/akhilgandhi/user-backend" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">auth</h6>
+                        <p class="mb-0 opacity-75">This backend service exposes APIs for user signup and signin.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/akhilgandhi/service-registry" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">registry</h6>
+                        <p class="mb-0 opacity-75">This backend service works as service registry for blogging backend services.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/akhilgandhi/personal-backend-devops" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">backend-devops</h6>
+                        <p class="mb-0 opacity-75">This repository is used to handle devops tasks for blogging backend services.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/akhilgandhi/personal-frontend" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">frontend</h6>
+                        <p class="mb-0 opacity-75">This is the frontend for blogging website.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
